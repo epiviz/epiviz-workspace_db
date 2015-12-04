@@ -5,9 +5,9 @@
  * Time: 8:56 PM
  */
 
-require_once('src/data/EpiVizDataManager.php');
+require_once('src/workspace/EpivizWorkspaceManager.php');
 
-$mgr = new EpiVizDataManager();
+$mgr = new EpivizWorkspaceManager();
 
 header('Access-Control-Allow-Origin: *');
 echo json_encode($mgr->execute($_REQUEST));
