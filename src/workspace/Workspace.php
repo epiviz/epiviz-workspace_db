@@ -5,7 +5,7 @@
  * Time: 2:07 PM
  */
 
-require_once('DBSettings.php');
+require_once('DBConnection.php');
 require_once('DBBasics.php');
 
 class Workspace {
@@ -19,8 +19,8 @@ class Workspace {
   private $deleteWorkspaceStmt;
 
   public function __construct() {
-    $this->db = DBSettings::db();
-
+    $this->db = DBConnection::db();
+      
     $this->updateWorkspaceStmt = $this->db->prepare(
         "UPDATE workspaces_v2 "
         . "SET name= :name, content= :content "

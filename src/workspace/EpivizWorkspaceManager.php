@@ -6,7 +6,6 @@
  */
 
 require_once('util.php');
-require_once('DBSettings.php');
 require_once('Workspace.php');
 
 class EpivizWorkspaceManager {

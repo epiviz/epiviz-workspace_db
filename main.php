@@ -5,6 +5,7 @@
  * Time: 8:56 PM
  */
 
+require_once('db_config.php');
 require_once('src/workspace/EpivizWorkspaceManager.php');
 
 $mgr = new EpivizWorkspaceManager();
