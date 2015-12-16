@@ -6,6 +6,7 @@
  */
 
 require_once('db_config.php');
+require_once('DBConnection.php');
 require_once('src/workspace/EpivizWorkspaceManager.php');
 
 $mgr = new EpivizWorkspaceManager();

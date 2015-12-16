@@ -12,7 +12,11 @@ $CURRENT_URL = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 $config = dirname(__FILE__) . '/src/oauth/hybridauth/config.php';
 require_once("src/oauth/hybridauth/Hybrid/Auth.php");
 
-require_once('src/data/DBSettings.php');
+echo "Here!\n";
+
+require_once('db_config.php');
+require_once('DBConnection.php');
+
 require_once("src/oauth/LoginDataManager.php");
 
 try {

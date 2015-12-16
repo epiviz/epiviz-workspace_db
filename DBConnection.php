@@ -4,6 +4,7 @@
  * Date: 1/29/13
  * Time: 4:13 PM
  */
+
 class DBConnection {
   private static $db = null;
 

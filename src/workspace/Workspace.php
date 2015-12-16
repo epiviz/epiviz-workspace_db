@@ -5,7 +5,6 @@
  * Time: 2:07 PM
  */
 
-require_once('DBConnection.php');
 require_once('DBBasics.php');
 
 class Workspace {
