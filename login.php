@@ -6,7 +6,7 @@ session_start();
 // $CURRENT_URL = (!empty($_SERVER['HTTPS'])) ? "https://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] : "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 
 // For now, EpiViz uses only HTTP
-$CURRENT_URL = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+$CURRENT_URL = "http://" . $_SERVER['SERVER_NAME'] . ":" . $_SERVER['SERVER_PORT'] . $_SERVER['REQUEST_URI'];
 
 // change the following paths if necessary
 $config = dirname(__FILE__) . '/src/oauth/hybridauth/config.php';
