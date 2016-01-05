@@ -84,7 +84,5 @@ if (isset($_GET["logout"])) {
   die();
 } // if user connected to the selected provider
 
-echo "Made it all the way here!";
-
 // if not, include unauthenticated user view
 include "inc_unauthenticated_user.php";
