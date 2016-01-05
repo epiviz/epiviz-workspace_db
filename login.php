@@ -12,8 +12,6 @@ $CURRENT_URL = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 $config = dirname(__FILE__) . '/src/oauth/hybridauth/config.php';
 require_once("src/oauth/hybridauth/Hybrid/Auth.php");
 
-echo "Here!\n";
-
 require_once('db_config.php');
 require_once('DBConnection.php');
 
@@ -85,6 +83,8 @@ if (isset($_GET["logout"])) {
 
   die();
 } // if user connected to the selected provider
+
+echo "Made it all the way here!";
 
 // if not, include unauthenticated user view
 include "inc_unauthenticated_user.php";
